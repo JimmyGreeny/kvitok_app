@@ -38,7 +38,7 @@ app.listen(PORT, () => {
 
 app.use(
   cors({
-    origin: ["http://localhost:4000"],
+    origin: ["https://mern-to-heroku-2a747aaa3f64.herokuapp.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })

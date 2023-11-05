@@ -36,8 +36,13 @@ app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
 
-app.use(cors());
-
+app.use(
+  cors({
+    origin: ["https://mern-to-heroku-2a747aaa3f64.herokuapp.com"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(cookieParser());
 
 app.use(express.json());

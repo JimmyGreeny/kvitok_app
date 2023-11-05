@@ -47,4 +47,4 @@ app.use(cookieParser());
 
 app.use(express.json());
 
-app.use("/");
+app.use("/", authRoute);

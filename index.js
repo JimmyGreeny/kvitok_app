@@ -38,7 +38,7 @@ app.listen(PORT, () => {
 
 app.use(
   cors({
-    origin: ["http://localhost:4000/login"],
+    origin: ["http://localhost:4000"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })

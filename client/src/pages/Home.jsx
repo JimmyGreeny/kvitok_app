@@ -14,7 +14,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:4000/api",
+        "http://localhost:4000",
         {},
         { withCredentials: true }
       );

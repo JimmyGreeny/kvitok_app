@@ -14,7 +14,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "https://mern-to-heroku-2a747aaa3f64.herokuapp.com",
+        "/api",
         {},
         { withCredentials: true }
       );

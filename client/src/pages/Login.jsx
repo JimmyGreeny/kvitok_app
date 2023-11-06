@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://mern-to-heroku-2a747aaa3f64.herokuapp.com/login",
+        "/api/login",
         {
           ...inputValue,
         },

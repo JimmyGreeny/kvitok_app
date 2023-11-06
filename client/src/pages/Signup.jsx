@@ -32,7 +32,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/signup",
+        "https://mern-to-heroku-2a747aaa3f64.herokuapp.com/signup",
         {
           ...inputValue,
         },

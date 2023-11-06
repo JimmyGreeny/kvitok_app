@@ -14,7 +14,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:4000",
+        "https://mern-to-heroku-2a747aaa3f64.herokuapp.com",
         {},
         { withCredentials: true }
       );

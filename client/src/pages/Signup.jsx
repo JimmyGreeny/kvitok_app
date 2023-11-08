@@ -9,8 +9,9 @@ const Signup = () => {
     email: "",
     password: "",
     username: "",
+    role: "",
   });
-  const { email, password, username } = inputValue;
+  const { email, password, username, role } = inputValue;
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setInputValue({
@@ -55,6 +56,7 @@ const Signup = () => {
       email: "",
       password: "",
       username: "",
+      role: "",
     });
   };
 
@@ -71,6 +73,14 @@ const Signup = () => {
             placeholder="Enter your email"
             onChange={handleOnChange}
           />
+        </div>
+        <div>
+          <label htmlFor="role">Role</label>
+          <select onChange={handleOnChange} name="role" type="text" value={role}>
+            <option disabled selected>Enter role entitled</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+          </select>
         </div>
         <div>
           <label htmlFor="email">Username</label>

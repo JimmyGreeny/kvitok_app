@@ -65,6 +65,14 @@ body {
   outline: none;
 }
 
+.form_container select {
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 1.1rem;
+  outline: none;
+}
+
 .form_container input::placeholder {
   font-size: 0.9rem;
   font-style: italic;
